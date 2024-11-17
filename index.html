@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en" id="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Presentation description" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/SlideController.css" />
+    <link rel="stylesheet" href="talk/styles.css" />
+
+    <title>HTML's Witnesses</title>
+  </head>
+  <body>
+    <main role="list">
+
+      <!-- 
+        Let me introduce myself:
+        - 24 years of web development. I saw the Browser Wars. And mammoths.
+        - 16 years as an independent developer. Sold out to corporations.
+        - Worked in a FAANG. Among other things I did there, I updated jQuery to v3.
+        - Magical talking bear prostitute.
+        - Right now working here, at DataSnipper as a frontend engineer. 
+      -->
+
+    <ex-illustration
+      data-no-page
+      data-restart
+      data-cover
+      data-src="images/door.webp"
+      data-alt="Witnesses"
+      role="listitem"
+    >
+    </ex-illustration>
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/door.webp"
+        data-alt="Witnesses"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="2rem"
+          data-angle="60deg"
+          data-size="24px"
+          data-left="140px"
+          data-top="-120px"
+          >Knock!<br>knock!</ex-cloud>
+      </ex-illustration>
+
+
+      <ex-illustration
+        data-no-page
+        data-restart
+        data-cover
+        data-src="images/witnesses.png"
+        data-alt="Witnesses"
+        role="listitem"
+      >
+        <style>
+          @font-face {
+            font-family: "inquisition";
+            src: url("../fonts/Inquisition Thin.otf") format("opentype");
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: "inquisition";
+            src: url("../fonts/Inquisition Thin Italic.otf") format("opentype");
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+          }
+
+          .talk-title {
+            font-family: "inquisition";
+            background-color: transparent;
+            text-shadow: none;
+            filter: none;
+
+            position: absolute;
+            bottom: 10%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-size: 5rem;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+
+            color: white;
+          }
+        </style>
+        <h1 class="talk-title">HTML's<br />Witnesses</h1>
+      </ex-illustration>
+
+      <!--
+      Imagine: you wake up in the morning,
+      drinking your coffee, and suddenly somebody knocking the door.
+      You look into the door eye, and ... well ...
+      NO ONE EXPECTS THE SPANISH INQUISITION!
+
+      Because their chief weapon is 
+      - surprise...
+      - surprise and fear...
+      - fear and surprise...
+      - ruthless efficiency
+      - almost fanatical devotion to the Pope
+      - nice red uniforms
+
+      We all clearly understand what would follow, 
+      and thus I will censor the rest of the story
+      with nice pixel mosaic.
+      -->
+
+      <ex-illustration
+      data-restart
+      data-cover
+      data-src="images/witnesses-pix.png"
+      data-alt="Hola"
+      role="listitem"
+    ></ex-illustration>
+
+      <ex-illustration
+        data-restart
+        data-cover
+        data-src="images/witnesses-pix.png"
+        data-alt="Hola"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="2rem"
+          data-angle="180deg"
+          data-size="32px"
+          data-left="-8px"
+          data-top="-20px"
+          >¡Hola!</ex-cloud>
+      </ex-illustration>
+
+      <ex-illustration
+        data-restart
+        data-cover
+        data-src="images/witnesses-pix.png"
+        data-alt="When did you last time think about HTML?"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="2rem"
+          data-angle="180deg"
+          data-size="24px"
+          data-left="-8px"
+          data-top="20px"
+          >When was<br />the last time<br />you thought<br />about
+          HTML?</ex-cloud>
+      </ex-illustration>
+
+      <!-- 
+        And you think: why would I even think 
+        about this kind of matter before my
+        first cup of coffee? Or at all?
+
+        Well ... all in all you are a frontend developer.
+        I assume. Please rise hands if you are not. 
+        
+        Why do you even here?!
+        -->
+
+      <ex-slide data-center data-caption="HTML's Witnesses">
+        <h1>Problem</h1>
+      </ex-slide>
+
+      <!-- 
+        I am. And as such I was taking part in the hire process in the AWS Amazon.
+        On the interview for a sinior roles I was giving pretty simple tasks, which
+        rather offten included sending data to the server. 
+        
+        And ask avoiding using frameworks for this matter. Or even avoiding JS at all.
+        And you know what? Most of the candidates were failing to do so.
+        -->
+
+      <ex-illustration
+        data-restart
+        data-cover
+        data-src="images/interrigation-pix.png"
+        data-alt="When did you last time think about HTML?"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="2rem"
+          data-angle="60deg"
+          data-size="24px"
+          data-left="260px"
+          data-top="-180px"
+          >Can you<br />send data<br />to server<br>with HTML?</ex-cloud
+        >
+      </ex-illustration>
+
+      <!-- 
+        They were shocked that you don't need React to send data to the server
+        or at the very least fetch.
+
+        But why does this even matter?
+        For couple of reasons, which boils down to the UX and DX benefits.
+
+        Web was buildt on three basic technologies: HTML, CSS, and JS.
+        - HTML to define semantics and structure of the document
+        - CSS to define presentation
+        - JS to define interactivity
+
+        Right now JS is in favour. It taking over CSS and HTML.
+        Favorite tool. And when you have a hammer everything starting to look like a nail. 
+
+        We got JSX as a layer over HTML. We have our css-in-js for CSS.
+        It less then optimal, you limit your possibilities, offten at cost of UX.
+        But you know JS and you are comfortable with it.
+
+        We can do more if we would know our tools!
+        The 5 year old knows around 2000 words.
+        In HTML language is around 130 tags. 
+        And developers knows like around 30 of them.
+
+        Aside from more semanticly correct code which is easier to maintain and read,
+        if something work on a level of browser, rather your own JS, it can be up to 
+        60 times faster.
+
+        Let me show you how you can benefit from some HTML interactivity features.
+        -->
+
+      <ex-illustration
+        data-restart
+        data-cover
+        data-src="images/cupofjs-pix.png"
+        data-alt="When did you last time think about HTML?"
+        role="listitem"
+      >
+        <ex-cloud
+          data-bgcolor="#eae1ee"
+          data-tail-size="2rem"
+          data-angle="80deg"
+          data-size="36px"
+          data-left="240px"
+          data-top="-60px"
+          >Een lekker<br>kopje JS?</ex-cloud
+        >
+      </ex-illustration>
+
+      <!-- 
+        So, how HTML was evolving, 
+        first it was text, img and links
+        then forms,
+        then tables,
+        then scripts and styling
+        ... there was attempt to move to more strict XML-like syntax, but it failed miserably
+        then we try to make HTML more expressive. 
+        That's how we got HTML5, which was build by looking at classes we creating in the web and 
+        turning them into tags.
+        And now ... we are solving next big problem. 
+        UI. User interaction and interfaces are challenging.
+        A lot of JS. A lot of styling and accessibility issues.
+        And now it's bigger then just HTML. 
+        That's how we got Open UI Community Group.
+        They refine problems. Create proposals. 
+        And this proposals then became a base to update of HTML, CSS and JS specs.
+        In their own pace and way. 
+        -->
+
+      <!-- <ex-illustration data-src="images/hammer.png" data-alt="HTML evolution timeline" role="listitem"></ex-illustration> -->
+
+
+      <ex-illustration data-contain data-src="images/timeline.jpg" data-alt="HTML evolution timeline" role="listitem"></ex-illustration>
+
+      <ex-qrcode
+        data-level="2"
+        data-qrcode="open-ui.svg"
+        data-link="https://open-ui.org/"
+        data-label="https://open-ui.org/"
+      >
+        Open UI Community Group
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="2"
+        data-qrcode="qr-html-interactive.svg"
+        data-link="https://html.spec.whatwg.org/multipage/interactive-elements.html#interactive-elements"
+        data-label="https://html.spec.whatwg.org/"
+      >
+        HTML Interactive elements
+      </ex-qrcode>
+
+      <ex-slide data-center data-padded>
+        <hgroup>
+          <section>
+            <h1>&lt;details></h1>
+            <h1>&lt;summary></h1>
+          </section>
+          <baseline-status data-click featureId="details"></baseline-status>
+        </hgroup>
+      </ex-slide>
+
+      <ex-qrcode
+        data-level="3"
+        data-qrcode="baseline.svg"
+        data-link="https://www.youtube.com/watch?v=DNXEORSk4GU"
+        data-label="https://www.youtube.com/watch?v=DNXEORSk4GU"
+      >
+        Baseline web features for the win
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="2"
+        data-qrcode="webdx.svg"
+        data-link="https://www.w3.org/community/webdx/"
+        data-label="https://www.w3.org/community/webdx/"
+      >
+        WebDX Community Group
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="3"
+        data-qrcode="features-explorer.svg"
+        data-link="https://web-platform-dx.github.io/web-features-explorer/widely-available/"
+        data-label="https://web-platform-dx.github.io/web-features-explorer/"
+      >
+        Web Platform: Features Explorer
+      </ex-qrcode>
+
+      <ex-slide data-center data-padded>
+        <hgroup>
+          <section>
+            <h1>&lt;details></h1>
+            <h1>&lt;summary></h1>
+          </section>
+          <baseline-status data-click featureId="details"></baseline-status>
+        </hgroup>
+      </ex-slide>
+
+      <ex-code data-code="42" role="listitem">
+        <script class="language-html" type="text/plain">
+          <details>
+            <summary>
+              Can I open it?
+            </summary>
+            Yes, you can.
+          </details>
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-size="42px">
+        <section class="nes-container nes-text with-title">
+          <h2 class="title">FAQ</h2>
+          <details>
+            <summary>Can I open it?</summary>
+            Yes, you can.
+          </details>
+        </section>
+      </ex-slide>
+
+      <ex-code data-code="42" role="listitem">
+        <script class="language-html" data-line="1" type="text/plain">
+          <details open>
+            <summary>
+              Can I open it?
+            </summary>
+            Yes, you can.
+          </details>
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-size="42px">
+        <section class="nes-container nes-text with-title">
+          <h2 class="title">FAQ</h2>
+          <details open>
+            <summary>Can I open it?</summary>
+            Yes, you can.
+          </details>
+        </section>
+      </ex-slide>
+
+      <ex-code data-code="36" role="listitem">
+        <script class="language-html" data-line="1, 5" type="text/plain">
+          <details name="accordion">
+            <summary>Can I open it?</summary>
+            Yes, you can.
+          </details>
+          <details name="accordion">
+            <summary>?</summary>
+            Yes, I can build accordion without JS.
+          </details>
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-size="42px">
+        <section class="nes-container nes-text with-title">
+          <h2 class="title">FAQ</h2>
+          <details name="accordion">
+            <summary>Can I open it?</summary>
+            Yes, you can.
+          </details>
+          <details name="accordion">
+            <summary>Accordion?</summary>
+            Hold my beer!
+          </details>
+        </section>
+      </ex-slide>
+
+      <!-- <ex-illustration
+        data-img-bottom
+        data-cover
+        data-src="images/cup-of-js.png"
+        data-alt="What about web API?"
+        role="listitem"
+      ></ex-illustration> -->
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-javascript" data-line="2" type="text/plain">
+          const detailsElement = document.querySelector('details');
+          detailsElement.open = true;
+        </script>
+      </ex-code>
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-javascript" data-line="2" type="text/plain">
+          const callback = event => {
+            console.log(event.oldState, event.newState);
+            // "closed" "open"
+          };
+          detailsElement.addEventListener('toggle', callback);
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/details-usage.png"
+        data-alt="Biggest pain of dialog"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration data-image-25 data-src="images/skull.gif" data-alt="Deprecated" role="listitem">
+        <ex-cloud 
+          data-bgcolor="#fff"
+          data-tail-size="2rem" 
+          data-angle="-72deg" 
+          data-size="64px" 
+          data-left="-260px" 
+          data-top="-60px"
+          >3.5%</ex-cloud>
+      </ex-illustration>
+
+      <ex-qrcode
+        data-level="1"
+        data-qrcode="details.svg"
+        data-link="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element"
+        data-label="https://html.spec.whatwg.org/"
+      >
+      Details &amp; Summary
+      </ex-qrcode>
+
+      <ex-slide data-padded data-click data-center>
+        <hgroup>
+          <h1>&lt;dialog></h1>
+          <baseline-status featureId="dialog"></baseline-status>
+        </hgroup>
+      </ex-slide>
+
+      <ex-code data-code="42" role="listitem">
+        <script class="language-html" type="text/plain">
+          <dialog open>
+            <p>Delete account?</p>
+          </dialog>
+          <p><!-- ... --></p>
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-wide data-center data-size="42px">
+        <dialog open class="nes-dialog">
+          <p>Delete account?</p>
+        </dialog>
+        <p style="color: #ddd; font-size: 0.8em; line-height: 1.44em">
+          The "Spanish Inquisition" may be defined broadly as operating in Spain
+          and in all Spanish colonies and territories, which included the Canary
+          Islands, the Kingdom of Naples,[citation needed] and all Spanish
+          possessions in North America and South America.
+        </p>
+      </ex-slide>
+
+      <ex-code data-code="26" role="listitem">
+        <script class="language-html" data-line="3" type="text/plain">
+          <dialog open>
+            <p>Delete account?</p>
+            <form method="dialog">
+              <button
+                autofocus
+                type="submit"
+                value="yes">Yes</button>
+              <button
+                type="submit"
+                value="no">No</button>
+            </form>
+          </dialog>
+        </script>
+      </ex-code>
+
+      <ex-code data-code="26" role="listitem">
+        <script class="language-html" data-line="7, 10" type="text/plain">
+          <dialog open>
+            <p>Are you sure you want to delete account?</p>
+            <form method="dialog">
+              <button
+                autofocus
+                type="submit"
+                value="yes">Yes</button>
+              <button
+                type="submit"
+                value="no">No</button>
+            </form>
+          </dialog>
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-wide data-center data-size="42px">
+        <dialog open class="nes-dialog">
+          <p>Delete account?</p>
+          <form method="dialog">
+            <button
+              autofocus
+              class="nes-btn is-error"
+              type="submit"
+              value="yes"
+            >
+              Yes
+            </button>
+            <button class="nes-btn" type="submit" value="no">No</button>
+          </form>
+        </dialog>
+      </ex-slide>
+
+      <!-- <ex-illustration
+        data-img-bottom
+        data-cover
+        data-src="images/cup-of-js.png"
+        data-alt="What about web API?"
+        role="listitem"
+      ></ex-illustration> -->
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-javascript" type="text/plain">
+          const dialogElement = document.querySelector('dialog');
+          dialogElement.open = true;
+          dialogElement.returnValue = 'yes';
+        </script>
+      </ex-code>
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-javascript" type="text/plain">
+          const dialogElement = document.querySelector('dialog');
+          dialogElement.show();
+          dialogElement.showModal();
+          dialogElement.close('value');
+        </script>
+      </ex-code>
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-html" data-line="1-3" type="text/plain">
+          <button type="button">Open dialog</button>
+          <output></output>
+          <dialog>
+            <p>Delete account?</p>
+            <form method="dialog">
+              <button
+                autofocus
+                type="submit"
+                value="yes">Yes</button>
+              <button
+                type="submit"
+                value="no">No</button>
+            </form>
+          </dialog>
+        </script>
+      </ex-code>
+
+      <ex-code data-code="20" role="listitem">
+        <script class="language-js" type="text/plain">
+          const dialogElement = document.querySelector('dialog');
+          const buttonElement = document.querySelector('button');
+          const outputElement = document.querySelector('output');
+          buttonElement.addEventListener('click', () => dialogElement.showModal());
+          dialogElement.addEventListener('close', event => {
+            outputElement.textContent = `> ${dialogElement.returnValue}`;
+          });
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-wide data-center data-size="42px">
+        <button class="nes-btn is-error" id="ex-1-button" type="button">
+          Delete
+        </button>
+        &nbsp;<output id="ex-1-output"></output>
+        <dialog id="ex-1-dialog" class="nes-dialog">
+          <p>Delete account?</p>
+          <form method="dialog">
+            <button
+              autofocus
+              class="nes-btn is-error"
+              type="submit"
+              value="yes"
+            >
+              Yes
+            </button>
+            <button class="nes-btn" type="submit" value="no">No</button>
+          </form>
+        </dialog>
+        <script>
+          const dialogElement = document.querySelector("#ex-1-dialog");
+          const buttonElement = document.querySelector("#ex-1-button");
+          const outputElement = document.querySelector("#ex-1-output");
+          buttonElement.addEventListener("click", () =>
+            dialogElement.showModal()
+          );
+          dialogElement.addEventListener("close", (event) => {
+            outputElement.textContent = `> ${dialogElement.returnValue}`;
+          });
+        </script>
+      </ex-slide>
+
+      <ex-screen
+        data-src="images/pain.png"
+        data-alt="Biggest pain of dialog"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-screen
+        data-src="images/dialog-usage.png"
+        data-alt="Dialog usage"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-illustration data-image-25 data-src="images/skull.gif" data-alt="Deprecated" role="listitem">
+        <ex-cloud 
+          data-bgcolor="#fff"
+          data-tail-size="2rem" 
+          data-angle="-72deg" 
+          data-size="64px" 
+          data-left="-260px" 
+          data-top="-60px"
+          >0.3%</ex-cloud>
+      </ex-illustration>
+
+      <ex-qrcode
+        data-level="1"
+        data-qrcode="dialog.svg"
+        data-link="https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element"
+        data-label="https://html.spec.whatwg.org/"
+      >
+      Dialog
+      </ex-qrcode>
+
+      <ex-slide data-center data-padded>
+        <hgroup>
+          <h1>Popover</h1>
+          <baseline-status data-click featureId="popover"></baseline-status>
+        </hgroup>
+      </ex-slide>
+
+      <ex-code data-code="40" role="listitem">
+        <script class="language-html" data-line="2,5-6" type="text/plain">
+          <button
+            popovertarget="popoverId"
+            >Delete</button>
+          <div
+            id="popoverId"
+            popover
+            >Account deleted</div>
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-wide data-center data-size="42px">
+        <button class="nes-btn is-error" popovertarget="popoverId">
+          Delete
+        </button>
+        <div id="popoverId" popover class="nes-dialog">Account deleted</div>
+      </ex-slide>
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-html" data-line="10" type="text/plain">
+          <button type="button"
+            popovertarget="popoverId"
+            >Delete</button>
+          <div
+            id="popoverId"
+            popover
+            >Account deleted
+            <button type="button"
+              popovertarget="popoverId"
+              popovertargetaction="hide"
+              >Noted</button>
+          </div>
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-wide data-center data-size="42px">
+        <button class="nes-btn is-error" popovertarget="popoverExample-2">
+          Delete
+        </button>
+        <div id="popoverExample-2" popover class="nes-dialog">
+          Account deleted
+          <form>
+            <button
+              type="button"
+              class="nes-btn is-error"
+              popovertarget="popoverExample-2"
+              popovertargetaction="hide"
+            >
+              Noted
+            </button>
+          </form>
+        </div>
+      </ex-slide>
+
+      <!-- <ex-illustration
+        data-img-bottom
+        data-cover
+        data-src="images/cup-of-js.png"
+        data-alt="What about web API?"
+        role="listitem"
+      ></ex-illustration> -->
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-javascript" type="text/plain">
+          const popoverElement = document.querySelector('[popover]');
+          popover.showPopover();
+          popover.hidePopover();
+          popover.togglePopover();
+        </script>
+      </ex-code>
+
+      <ex-screen
+        data-src="images/popover-usage.png"
+        data-alt="Popover usage"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-qrcode
+        data-level="1"
+        data-qrcode="popover-polyfill.svg"
+        data-link="https://github.com/oddbird/popover-polyfill"
+        data-label="https://github.com/oddbird/popover-polyfill"
+      >
+      Popover Polyfill
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="1"
+        data-qrcode="popover.svg"
+        data-link="https://html.spec.whatwg.org/multipage/popover.html"
+        data-label="https://html.spec.whatwg.org/multipage/popover.html"
+      >
+      Popover
+      </ex-qrcode>
+
+      <ex-slide data-fill-slide data-iframe>
+        <iframe src="./examples/popover/problem-1.html"></iframe>
+      </ex-slide>
+
+      <ex-slide data-center data-padded>
+        <hgroup>
+          <section>
+            <h1>CSS Anchor</h1>
+            <h1>Positioning</h1>
+          </section>
+          <baseline-status
+            data-click
+            featureId="anchor-positioning"
+          ></baseline-status>
+        </hgroup>
+      </ex-slide>
+
+      <ex-code data-code="28" role="listitem">
+        <script class="language-html" type="text/plain">
+          <button 
+            popovertarget="user-menu" 
+            aria-label="Open user-menu"
+            id="avatar-button">
+            <i class="nes-charmander"></i>
+          </button>
+          <dialog popover id="user-menu" class="user-menu">
+            <!-- ... -->
+          </dialog>
+        </script>
+      </ex-code>
+
+      <ex-code data-code="28" role="listitem">
+        <script class="language-css" type="text/plain">
+          #avatar-button {
+            anchor-name: --avatar-element;
+          }
+          .user-menu {
+            position-area: top;
+            position-anchor: --avatar-element;
+
+            position: absolute;
+            inset: auto;
+            margin: 0;
+          }
+        </script>
+      </ex-code>
+
+      <ex-slide data-fill-slide data-iframe>
+        <iframe src="./examples/popover/solution-1.html"></iframe>
+      </ex-slide>
+
+      <ex-slide data-fill-slide data-iframe>
+        <iframe src="./examples/popover/problem-2.html"></iframe>
+      </ex-slide>
+
+      <ex-code data-code="28" role="listitem">
+        <script class="language-css" data-line="4" type="text/plain">
+          .user-menu {
+            position-area: top;
+            position-anchor: --avatar-element;
+            position-try-fallbacks: bottom;
+          }
+        </script>
+      </ex-code>
+
+      <ex-slide data-fill-slide data-iframe>
+        <iframe src="./examples/popover/solution-2.html"></iframe>
+      </ex-slide>
+
+      <ex-code data-code="36" role="listitem">
+        <script class="language-html" type="text/plain">
+          <p>Absolutely! Let's make it epic. 
+            <button 
+              class="abbr-button" 
+              type="button" 
+              popovertarget="abbr">BTW</button>, did 
+              <!-- ... --></p>
+          <p popover id="abbr">By the way</p>
+        </script>
+      </ex-code>
+
+      <ex-code data-code="36" role="listitem">
+        <script class="language-css" data-line="7" type="text/plain">
+          .abbr-button {
+            anchor-name: --abbr-element;
+          }
+          #abbr {
+            position-area: bottom;
+            position-anchor: --abbr-element;
+            position-visibility: anchors-visible;
+          }
+        </script>
+      </ex-code>
+
+      <ex-slide data-fill-slide data-iframe>
+        <iframe src="./examples/popover/solution-3.html"></iframe>
+      </ex-slide>
+
+
+      <ex-qrcode
+        data-level="2"
+        data-qrcode="anchor-positioning.svg"
+        data-link="https://drafts.csswg.org/css-anchor-position-1/"
+        data-label="https://drafts.csswg.org/css-anchor-position-1/"
+      >
+      Anchor Positioning
+      </ex-qrcode>
+
+      <ex-screen
+        data-src="images/position-anchor.png"
+        data-alt="Biggest pain of dialog"
+        role="listitem"
+      ></ex-screen>
+
+      <ex-qrcode
+        data-level="2"
+        data-qrcode="anchoreum.svg"
+        data-link="https://anchoreum.com/"
+        data-label="https://anchoreum.com/"
+      >
+      Anchoreum
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="3"
+        data-qrcode="youtube-anchor.svg"
+        data-link="https://www.youtube.com/watch?v=DNXEORSk4GU"
+        data-label="https://www.youtube.com/watch?v=DNXEORSk4GU"
+      >
+        CSS Popover + Anchor Positioning is Magical
+      </ex-qrcode>
+
+      <ex-illustration data-image-25 data-src="images/skull.gif" data-alt="Deprecated" role="listitem">
+        <ex-cloud 
+          data-bgcolor="#fff"
+          data-tail-size="2rem" 
+          data-angle="-72deg" 
+          data-size="28px" 
+          data-left="-260px" 
+          data-top="-60px"
+          ><section class="lines">popovertarget<br><mark>is Deprecated</mark><br>Xa! Xa! Xa!</section></ex-cloud>
+      </ex-illustration>
+
+      <ex-slide data-center data-padded>
+        <hgroup>
+          <section>
+            <h1>Invoker</h1><br>
+            <h1>Commands</h1>
+          </section>
+          <baseline-status
+            data-click
+            featureId="invoker-commands"
+          ></baseline-status>
+        </hgroup>
+      </ex-slide>
+
+      <ex-slide data-size="40px">
+        <h2 class="list-title">Can be triggered by</h2>
+        <ul class="invoker-list">
+          <li>button</li>
+          <li>button[reset]</li>
+          <li>input[button]</li>
+        </ul>
+      </ex-slide>
+
+      <ex-illustration data-src="images/success-pit.png" data-alt="Shoot the leg off" role="listitem"></ex-illustration>
+
+      <ex-slide data-size="40px">
+        <h2 class="list-title">Can trigger</h2>
+        <ul class="invoker-list">
+          <li>popover</li>
+          <li>dialog</li>
+          <li>details</li>
+          <li>select</li>
+          <li>input</li>
+          <li>video</li>
+          <li>audio</li>
+          <li>fullscreen</li>
+        </ul>
+      </ex-slide>
+
+      <ex-code data-code="36" role="listitem">
+        <script class="language-html" data-line="2-3,6" type="text/plain">
+          <button type="button"
+            commandfor="count_field"
+            command="step-up"
+            aria-label="Increase count">+</button>
+          <input type="number"
+            id="count_field" 
+            value="1" step="1" min="0">
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-size="32px">
+        <i class="form-ball nes-pokeball"></i>
+        <section class="pocke-form nes-container nes-text with-title">
+          <h1 class="title">How many pocke-balls?</h1>
+          <fieldset>
+            <button commandfor="count_field" command="step-down" type="button" class="nes-btn is-primary">-</button>
+            <input type="number" id="count_field" class="nes-input" value="1" step="1" min="0">
+            <button commandfor="count_field" command="step-up" type="button" class="nes-btn is-primary">+</button>
+          </fieldset>
+        </section>
+      </ex-slide>
+
+      <ex-code data-code="32" role="listitem">
+        <script class="language-html" data-line="5,8" type="text/plain">
+          <html id="page">
+          <!-- ... -->
+          <button type="button" 
+            commandfor="page" 
+            command="request-fullscreen">Enter</button>
+          <button type="button" 
+            commandfor="page" 
+            command="exit-fullscreen">Exit</button>
+        </script>
+      </ex-code>
+
+      <ex-slide data-click data-example data-size="56px">
+        <section class="nes-container nes-text with-title">
+          <h2 class="title">Fullscreen</h2>
+          <button class="nes-btn is-success" commandfor="page" command="request-fullscreen">Enter</button>
+          <button class="nes-btn is-error" commandfor="page" command="exit-fullscreen">Exit</button>
+        </section>
+      </ex-slide>
+
+      <ex-slide data-center data-padded>
+        <hgroup>
+          <h1>Custom</h1>
+          <h1>Commands</h1>
+        </hgroup>
+      </ex-slide>
+
+      <ex-code data-code="28" role="listitem">
+        <script class="language-html" data-line="1,6-7" type="text/plain">
+          <article id="message-123">
+            <!-- ... -->
+            <button type="button" 
+              class="action-button"
+              aria-label="Like"
+              commandfor="message-123" 
+              command="--like-message">
+              <i class="nes-like"></i>
+            </button>
+          </article>
+        </script>
+      </ex-code>
+
+      <ex-code data-code="32" role="listitem">
+        <script class="language-javascript" data-line="5" type="text/plain">
+          interface CommandEvent : Event {
+            constructor(CommandEventInit invokeEventInit);
+            readonly attribute Element source;
+            readonly attribute DOMString type = "command";
+            readonly attribute DOMString command;
+          };
+        </script>
+      </ex-code>
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-javascript" type="text/plain">
+          const message = document.getElementById('message-123');
+          const commandHandler = ({ command, currentTarget }) => {
+            const id = currentTarget.getAttribute('id');
+            switch (command) {
+              case '--like-message':
+                navigator.sendBeacon(`/message/${id}/like/`);
+                optimisticLike();
+                break;
+              // ...
+            }
+          }
+          message.addEventListener('command', commandHandler);
+        </script>
+      </ex-code>
+
+      <ex-slide data-fill-slide data-click data-example data-size="32px">
+        <section class="message-list">
+          <article id="message-123" class="message from-right">
+            <i class="nes-charmander"></i>
+            <div class="nes-balloon from-right">
+              <p> Hey Bulbasaur! I'm good, just training hard.</p>
+
+              <menu class="actions">
+                <section class="like-container">
+                  <output>0</output>
+                  <button type="button" 
+                    class="action-button"
+                    aria-label="Like"
+                    commandfor="message-123" 
+                    command="--like-message">
+                    <i class="nes-icon is-medium like"></i>
+                  </button>
+                </section>
+                <button type="button" 
+                  class="action-button"
+                  aria-label="Like"
+                  commandfor="message-123" 
+                  command="--bookmark-message">
+                  <i class="nes-icon is-medium star"></i>
+                </button>
+              </menu>
+            </div>
+          </article>
+        </section>
+
+        <script>
+          const message = document.getElementById('message-123');
+          if (message === null) throw new Error('Message element not found');
+          const output = message.querySelector('output');
+          if (output === null) throw new Error('Output element not found');
+          const optimisticLike = output => {
+            output.textContent = Number(output.textContent) + 1;
+          }
+          const optimisticBookmark = () => {}
+          const commandHandler = (event) => {
+            const { command, currentTarget } = event;
+            const id = currentTarget.getAttribute('id');
+            switch (command) {
+              case '--like-message':
+                navigator.sendBeacon(`/message/${id}/like/`);
+                optimisticLike(output);
+                break;
+              case '--bookmark-message':
+                navigator.sendBeacon(`/message/${id}/bookmark/`);
+                break;
+              default:
+                break;
+            }
+          }
+          message.addEventListener('command', commandHandler);
+        </script>
+      </ex-slide>
+
+      <ex-illustration data-image-25 data-src="images/skull.gif" data-alt="Deprecated" role="listitem">
+        <ex-cloud 
+          data-bgcolor="#fff"
+          data-tail-size="2rem" 
+          data-angle="78deg" 
+          data-size="24px" 
+          data-left="260px" 
+          data-top="-60px"
+          ><section class="lines">CommandEvent<br><mark>do not bubble</mark><br>Xa! Xa! Xa!</section></ex-cloud>
+      </ex-illustration>
+
+      <ex-code data-code="32" role="listitem">
+        <script class="language-javascript" data-line="3" type="text/plain">
+          interface CommandEvent : Event {
+            constructor(CommandEventInit invokeEventInit);
+            readonly attribute Element source;
+            readonly attribute DOMString type = "command";
+            readonly attribute DOMString command;
+          };
+        </script>
+      </ex-code>
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-html" data-line="1,8" type="text/plain">
+          <body id="event-controller">
+            <!-- ... -->
+            <article>
+              <!-- ... -->
+              <button type="button" 
+                class="action-button"
+                aria-label="Like"
+                commandfor="event-controller" 
+                command="--like-message">
+                <i class="nes-like"></i>
+              </button>
+            </article>
+        </script>
+      </ex-code>
+
+      <ex-code data-code="24" role="listitem">
+        <script class="language-javascript" type="text/plain">
+          const eventController = document.getElementById('event-controller');
+          const commandHandler = ({ command, source }) => {
+            switch (command) {
+              case '--like-message':
+                const id = source.closest('.message').getAttribute('id');
+                navigator.sendBeacon(`/message/${id}/like/`);
+                optimisticLike();
+                break;
+              // ...
+            }
+          }
+          eventController.addEventListener('command', commandHandler);
+        </script>
+      </ex-code>
+
+      <ex-qrcode
+        data-level="2"
+        data-qrcode="invokers-polyfill.svg"
+        data-link="https://github.com/keithamus/invokers-polyfill"
+        data-label="https://github.com/keithamus/invokers-polyfill"
+      >
+      Invoker Commands Polyfill
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="2"
+        data-qrcode="invoker-commands.svg"
+        data-link="https://open-ui.org/components/invokers.explainer/"
+        data-label="https://open-ui.org/components/invokers.explainer/"
+      >
+      Invoker Commands
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="2"
+        data-qrcode="youtube-invoker.svg"
+        data-link="https://www.youtube.com/watch?v=AY6BMht28qg"
+        data-label="https://www.youtube.com/watch?v=AY6BMht28qg"
+      >
+        Invoker Commands
+      </ex-qrcode>
+
+      <ex-slide data-center data-padded>
+        <hgroup>
+          <section>
+            <h1>Interest</h1><br>
+            <h1>Invokers</h1>
+          </section>
+          <baseline-status
+            data-click
+            featureId="interest-invokers"
+          ></baseline-status>
+        </hgroup>
+      </ex-slide>
+
+      <ex-slide data-size="40px">
+        <h2 class="list-title">Can be triggered by</h2>
+        <ul class="invoker-list">
+          <li>button</li>
+          <li>input</li>
+          <li>textarea</li>
+          <li>select</li>
+          <li>summary</li>
+          <li>a</li>
+          <li>area</li>
+        </ul>
+      </ex-slide>
+
+      <ex-code data-code="32" role="listitem">
+        <script class="language-html" data-line="2-3" type="text/plain">
+          <button 
+            interesttarget="my-tooltip"
+            interestaction="togglePopover">
+            Hover/Focus to show the tooltip</button>
+          <span 
+            popover=hint 
+            id="my-toolip">
+            This is the tooltip</span>
+        </script>
+      </ex-code>
+
+      <ex-qrcode
+        data-level="2"
+        data-qrcode="interest-invokers.svg"
+        data-link="https://open-ui.org/components/interest-invokers.explainer/"
+        data-label="https://open-ui.org/"
+      >
+        Interest Invokers
+      </ex-qrcode>
+
+      <!-- <ex-illustration data-fill-slide data-image-50 data-contain data-src="images/made-in-ukraine.svg" data-alt="Made in Ukraine" role="listitem"></ex-illustration> -->
+
+      <ex-illustration
+        data-img-top
+        data-cover
+        data-src="images/work.png"
+        data-alt="Hola"
+        role="listitem"
+      >
+      <ex-cloud
+        data-bgcolor="#eae1ee"
+        data-tail-size="2rem"
+        data-angle="240deg"
+        data-size="32px"
+        data-left="-200px"
+        data-top="-20px"
+        >I know<br>where do<br>you live...</ex-cloud
+    ></ex-illustration>
+
+      <ex-qrcode
+        data-level="1"
+        data-qrcode="nes.svg"
+        data-link="https://nostalgic-css.github.io/NES.css/"
+        data-label="https://nostalgic-css.github.io/NES.css/"
+      >
+        NES.css
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-level="3"
+        data-qrcode="youtube-future-open.svg"
+        data-link="https://www.youtube.com/watch?v=2wduQonUzIA"
+        data-label="https://www.youtube.com/watch?v=2wduQonUzIA"
+      >
+        The future of UI is "open"
+      </ex-qrcode>
+
+      <ex-qrcode
+        data-logotype
+        data-level="2"
+        data-qrcode="come-back-alive-qr.svg"
+        data-link="https://savelife.in.ua/en/donate-en/"
+        data-label="https://savelife.in.ua/"
+      >
+        <img class="donation" src="images/come-back-alive.svg" alt="Come Back Alive Fund">
+      </ex-qrcode>
+
+      <ex-qrcode 
+        data-click
+        data-level="3"
+        data-qrcode="htmls-witnesses.svg" 
+        data-link="https://github.com/SilentImp/htmls-witnesses" 
+        data-label="https://github.com/SilentImp/htmls-witnesses">
+        Slides
+        <address class="address" slot="details">
+          <p>Anton Nemtsev</p>
+          <p> </p>
+          <p>twitter: <a href="https://twitter.com/silentimp">@silentimp</a></p>
+          <p>email: <a href="mailto:thesilentimp@gmail.com">thesilentimp@gmail.com</a></p>
+        </address>
+      </ex-qrcode>
+
+
+    </main>
+    <ex-progress></ex-progress>
+    <ex-countdown duration="20" relative></ex-countdown>
+    <script type="module" src="javascript/MessageController.mjs"></script>
+    <script type="module" src="javascript/components/Slide/Slide.mjs"></script>
+    <script type="module" src="javascript/components/Cloud/Cloud.mjs"></script>
+    <script
+      type="module"
+      src="javascript/components/Columns/Columns.mjs"
+    ></script>
+    <script type="module" src="javascript/components/Code/Code.mjs"></script>
+    <script
+      type="module"
+      src="javascript/components/QRCode/QRCode.mjs"
+    ></script>
+    <script
+      type="module"
+      src="javascript/components/Countdown/Countdown.mjs"
+    ></script>
+    <script
+      type="module"
+      src="javascript/components/Illustration/Illustration.mjs"
+    ></script>
+    <script
+      type="module"
+      src="javascript/components/Progress/Progress.mjs"
+    ></script>
+    <script
+      type="module"
+      src="javascript/components/Screenshot/Screenshot.mjs"
+    ></script>
+    <script type="module" src="javascript/components/Title/Title.mjs"></script>
+    <script type="module" src="javascript/components/Video/Video.mjs"></script>
+    <script type="module" src="javascript/SlideController.mjs"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/baseline-status@1/baseline-status.min.js"
+    ></script>
+    <script src="javascript/image.js" async></script>
+    <script src="javascript/prism.js" data-manual></script>
+
+    <script src="registerServiceWorker.mjs" async></script>
+  </body>
+</html>

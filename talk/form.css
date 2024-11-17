@@ -1,0 +1,41 @@
+label{
+  border: 2px solid #3b2eb3;
+  border-radius: 3px;
+  display: block;
+  padding: .5rem 1.5rem .5rem .5rem;
+  position: relative;
+  margin: .5rem 0;
+}
+
+input[type='radio'] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: .5rem;
+  margin: auto;
+}
+
+input[type='text'] {
+  margin: .5rem 0;
+  display: block;
+}
+
+input[type='text'][hidden] {
+  display: none;
+}
+
+fieldset {
+  all: unset;
+}
+
+:host([data-validate]):invalid,
+:host([data-validate]) input:invalid {
+  // background-color: #cc000066;
+  outline: 1rem solid #cc000066;
+}
+
+:host([data-validate]):valid,
+:host([data-validate]) input:valid {
+  // background-color: #00dd0066;
+  outline: 1rem solid #00dd0066;
+}

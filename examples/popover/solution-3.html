@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+    rel="stylesheet"
+  />
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+</head>
+<body>
+  <script type="module">
+    if (!("anchorName" in document.documentElement.style)) {
+      import("https://unpkg.com/@oddbird/css-anchor-positioning");
+    }
+  </script>
+  <style>
+
+    #abbr {
+      position-area: top;
+      position-anchor: --abbr-element;
+      position-visibility: anchors-visible;
+
+      --color: #333;
+      margin: 1.6rem 0;
+      inset: auto;
+      border-style: none;
+      padding: .5rem 1rem;
+      box-shadow: 0 -4px 0 0 var(--color), 0 4px 0 0 var(--color), -4px 0 0 0 var(--color), 4px 0 0 0 var(--color);
+      overflow: visible; 
+    }
+
+    .abbr-button {
+      all: unset;
+      anchor-name: --abbr-element;
+      display: inline-block;
+      text-decoration: wavy underline;
+    }
+
+    .avatar {
+      all: unset;
+      width: min-content;
+      height: min-content;
+      anchor-name: --avatar-element;
+    }
+
+    #user-menu {
+      position: absolute;
+      position-area: top;
+      position-try-fallbacks: bottom;
+      position-anchor: --avatar-element;
+      position-visibility: no-overflow;
+
+      --color: #333;
+      margin: 3rem 0 1.6rem -3.5rem;
+      inset: auto;
+      border-style: none;
+      padding: .5rem 1rem;
+      box-shadow: 0 -4px 0 0 var(--color), 0 4px 0 0 var(--color), -4px 0 0 0 var(--color), 4px 0 0 0 var(--color);
+      overflow: visible; 
+
+      &::backdrop {
+        background-color: rgba(0, 0, 0, .25);
+      }
+
+      &::before {
+        content: "";
+        display: block;
+
+        position: absolute;
+        inset-inline: 0;
+        inset-block-start: 100%;
+        margin-inline: auto;
+
+        width: 2rem;
+        height: .75rem;
+
+        background-color: #fff;
+        border-style: solid;
+        border-width: 0 4px 4px;
+        border-color: transparent var(--color) var(--color);
+      }
+ 
+      &::after {
+        content: "";
+        display: block;
+
+        position: absolute;
+        inset-inline: 0;
+        inset-block-start: calc(100% + .75rem - 4px);
+        margin-inline: auto;
+
+        width: 1rem;
+        height: .5rem;
+
+        background-color: #fff;
+        border-style: solid;
+        border-width: 0 4px 4px;
+        border-color: transparent var(--color) var(--color);
+      }
+
+      ul {
+        font-size: 16px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+        
+        button {
+          width: 100%;
+        }
+
+        li {
+          display: flex;
+          margin: .5rem 0;
+        }
+      }
+    }
+
+    .message-list {
+      max-width: 40rem;
+      margin: 2rem auto 3rem;
+
+      .message {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-end;
+        margin-block-end: 3rem;
+
+        i {
+          margin-block-end: -2rem;
+          flex-grow: 0;
+          flex-shrink: 0;
+        }
+
+        &.from-left {
+          flex-direction: row;
+
+          i {
+            transform: scaleX(-1);
+          }
+        }
+        &.from-right {
+          flex-direction: row-reverse;
+        }
+      }
+    }
+
+    * {
+      border-image-repeat: stretch!important;
+    }
+
+  </style>
+
+  <main class="message-list">
+    <section class="message from-left">
+      <i class="nes-bulbasaur"></i>
+      <div class="nes-balloon from-left">
+        <p>Hey Charmander! How's it going? Been a while since our last battle! We should definitely catch up and plan our next adventure soon.</p>
+      </div>
+    </section>
+    <section class="message from-right">
+      <button popovertarget="user-menu" class="avatar" aria-label="Avatar">
+        <i class="nes-charmander"></i>
+      </button>
+      <div class="nes-balloon from-right">
+        <p> Hey Bulbasaur! I'm good, just training hard.</p>
+      </div>
+    </section>
+    <section class="message from-right">
+      <i class="nes-charmander"></i>
+      <div class="nes-balloon from-right">
+        <p>Ready for our next match? I've been working on some new moves that I can't wait to show you.</p>
+      </div>
+    </section>
+    <section class="message from-left">
+      <i class="nes-bulbasaur"></i>
+      <div class="nes-balloon from-left">
+        <p>Absolutely! Let's make it epic. <button class="abbr-button" type="button" popovertarget="abbr">BTW</button>, did you see Pikachu's new move? It's incredible how much he's improved lately.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p popover id="abbr">By the way</p>
+    <dialog popover id="user-menu">
+      <ul>
+        <li><button type="button" class="nes-btn is-primary">Mute</button></li>
+        <li><button type="button" class="nes-btn is-primary">Block</button></li>
+        <li><button type="button" class="nes-btn is-error">Report</button></li>
+      </ul>
+    </dialog>
+  </footer>
+</body>
+</html>
