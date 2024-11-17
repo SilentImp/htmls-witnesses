@@ -1,0 +1,120 @@
+:host(ex-mktitle:nth-of-type(12n)) .slide {
+  background-image: url("../../../images/bg-jade.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 1)) .slide {
+  background-image: url("../../../images/bg-collector.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 2)) .slide {
+  background-image: url("../../../images/bg-frost.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 3)) .slide {
+  background-image: url("../../../images/bg-skarlet.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 4)) .slide {
+  background-image: url("../../../images/bg-liu.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 5)) .slide {
+  background-image: url("../../../images/bg-kotal.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 6)) .slide {
+  background-image: url("../../../images/bg-kabal.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 7)) .slide {
+  background-image: url("../../../images/bg-shan.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 8)) .slide {
+  background-image: url("../../../images/bg-cassie.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 9)) .slide {
+  background-image: url("../../../images/bg-cage.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 10)) .slide {
+  background-image: url("../../../images/bg-jekky.webp");
+}
+
+:host(ex-mktitle:nth-of-type(12n - 11)) .slide {
+  background-image: url("../../../images/bg-jax.webp");
+}
+
+:host .slide {
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.slide__delimiter {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h1 {
+  font-family: 'mk11';
+  color: #fff;
+  background: none;
+  filter: none;
+  position: absolute;
+  font-size: var(--font-size, 3rem);
+  top: calc(140px + var(--top, 0px));
+  left: calc(var(--slide-gap) + var(--left, 0px));
+  line-height: 1;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n)) .slide {
+  background-image: url("../../../images/bg-jade.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 1)) .slide {
+  background-image: url("../../../images/bg-collector.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 2)) .slide {
+  background-image: url("../../../images/bg-frost.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 3)) .slide {
+  background-image: url("../../../images/bg-skarlet.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 4)) .slide {
+  background-image: url("../../../images/bg-liu.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 5)) .slide {
+  background-image: url("../../../images/bg-kotal.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 6)) .slide {
+  background-image: url("../../../images/bg-kabal.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 7)) .slide {
+  background-image: url("../../../images/bg-shan.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 8)) .slide {
+  background-image: url("../../../images/bg-cassie.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 9)) .slide {
+  background-image: url("../../../images/bg-cage.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 10)) .slide {
+  background-image: url("../../../images/bg-jekky.avif");
+}
+
+:host-context(.avif):host(ex-mktitle:nth-of-type(12n - 11)) .slide {
+  background-image: url("../../../images/bg-jax.avif");
+}

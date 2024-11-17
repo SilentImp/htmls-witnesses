@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "theban";
+  src: url("../fonts/Theban Alphabet.ttf") format("truetype");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inquisition";
+  src: url("../fonts/Inquisition.otf") format("opentype");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inquisition";
+  src: url("../fonts/Inquisition Thin.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inquisition";
+  src: url("../fonts/Inquisition Thin Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inquisition";
+  src: url("../fonts/Inquisition Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/FiraCode-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-variant-ligatures: common-ligatures;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'hobbit';
+  src: url('../fonts/hobbiton-brushhand-font/HobbitonBrushhandhobbitonBrush-WygA.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'middleearth';
+  src: url('../fonts/middleearth-font/Middleearth-ao6m.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -1,0 +1,64 @@
+:host([data-delay]) .cloud {
+  opacity: 0;
+  animation: showcloud .5s var(--show-delay) forwards;
+}
+
+:host([data-hide-delay]) .cloud {
+  opacity: 1;
+  animation: showcloud .5s var(--hide-delay) reverse both;
+}
+
+@keyframes showcloud {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cloud {
+  font-size: var(--font-size, 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border-style: none;
+  background: var(--bgcolor, #fff);
+  border-radius: 100%;
+  width: max-content;
+  aspect-ratio: 1;
+  padding: 2rem;
+  filter: drop-shadow(.1rem .1rem 0 color-mix(in srgb, var(--bgcolor, #fff) 75%, black 25%));
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-transform: uppercase;
+  transform: translate(calc(-50% + var(--left, 0px)), calc(-50% + var(--top, 0px)));
+}
+
+.cloud-tail {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  transform-origin: 50% 50%;
+  transform: rotate(var(--angle));
+}
+
+.cloud-tail::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: calc(var(--tail-size, 1rem) / -2);
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  border-width: var(--tail-size, 1rem) calc(var(--tail-size, 1rem) / 2) 0;
+  border-style: solid;
+  border-color: var(--bgcolor, #fff) transparent transparent;
+  transform: translateY(calc(var(--tail-size, 1rem) * -0.2));
+}

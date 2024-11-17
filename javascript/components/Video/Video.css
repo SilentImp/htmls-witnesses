@@ -1,0 +1,31 @@
+:host {
+  background-color: transparent;
+}
+
+.slide__content {
+  padding: 0;
+}
+
+.slide {
+  background: none;
+}
+
+video {
+  width: var(--slide-width);
+  aspect-ratio: var(--slide-ratio);
+  object-fit: cover;
+}
+
+:host([data-img-top]) video {
+  object-position: 50% 0;
+}
+
+:host([data-contain]) video {
+  object-fit: contain;
+  background-color: var(--slide-bgc);
+}
+
+:host([data-pixel]) video {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+}

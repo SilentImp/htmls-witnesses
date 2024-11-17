@@ -1,0 +1,69 @@
+:host {
+  background-color: transparent;
+}
+
+.slide__content {
+  padding: 0;
+}
+
+.slide {
+  background: none;
+}
+
+img {
+  width: var(--slide-width);
+  aspect-ratio: var(--slide-ratio);
+  object-fit: cover;
+
+  image-rendering: pixelated;
+}
+
+:host([data-image-25]) img {
+  width: 25vh;
+  height: 25vh;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+:host([data-image-50]) img {
+  width: 50vh;
+  height: 50vh;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+:host([data-img-top]) img {
+  object-position: 50% 0;
+}
+
+:host([data-img-bottom]) img {
+  object-position: 50% 100%;
+}
+
+:host([data-sd]) img {
+  object-fit: scale-down;
+  background-color: var(--slide-bgc);
+}
+
+:host([data-fill]) img {
+  object-fit: fill;
+  background-color: var(--slide-bgc);
+}
+
+:host([data-contain]) img {
+  object-fit: contain;
+  background-color: var(--slide-bgc);
+}
+
+:host([data-pixel]) img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+}
+
+:host([data-fill-slide]) .slide__delimiter {
+  width: var(--slide-width);
+  height: var(--slide-height);
+  background-color: var(--slide-bgc);
+}
